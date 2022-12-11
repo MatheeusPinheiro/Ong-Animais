@@ -3,11 +3,11 @@
 include './Views/partials/Header/header.php';
 
 ?>
-
+<!--
 <div class="cad-container mt-2">
 	<div class="h2 text-center mt-3">Boas-vindas ao PetHelp</div>
 </div>
-
+-->
 
 <div class="area-cad">
 	<div class="singIn">
@@ -20,8 +20,8 @@ include './Views/partials/Header/header.php';
 			<div class="input-size ">
 				<input type="password" name="email" placeholder="Digite sua senha." require />
 			</div>
-			<div class=" input-size">
-				<input type="submit" value="Entrar" class="btn btn-primary btn-size" />
+			<div class=" input-size mt-2">
+				<input type="submit" value="Entrar" class="btn btn-primary" />
 			</div>
 		</form>
 
@@ -31,10 +31,10 @@ include './Views/partials/Header/header.php';
 		<div class="h4 title-cad text-center">Crie sua conta</div>
 		<div class="cad-option">
 			<div class="option-cad">
-				<a href="#">Criar Conta ONG.</a>
+				<a href="/singup/ong">Criar Conta ONG.</a>
 			</div>
 			<div class="option-cad">
-				<a href="#">Criar Conta Doador.</a>
+				<a href="/singup/doador">Criar Conta Doador.</a>
 			</div>
 		</div>
 	</div>
