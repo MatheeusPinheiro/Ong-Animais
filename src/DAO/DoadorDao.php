@@ -3,7 +3,7 @@
 
 <?php
 
-class OngDao
+class DoadorDao
 {
 
 	private $conexao;
@@ -20,14 +20,14 @@ class OngDao
 		}
 	}
 
-	public function insert(OngModel $model)
+	public function insert(DoadorModel $model)
 	{
 
-		$sql = "INSERT INTO ong(cnpj,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,1);";
+		$sql = "INSERT INTO doador(cpf,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,2);";
 
 		$stmt = $this->conexao->prepare($sql);
 
-		$stmt->bindValue(1, $model->cnpj);
+		$stmt->bindValue(1, $model->cpf);
 		$stmt->bindValue(2, $model->nome);
 		$stmt->bindValue(3, $model->email);
 		$stmt->bindValue(4, $model->senha);

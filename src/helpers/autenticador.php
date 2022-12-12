@@ -1,25 +1,19 @@
 <?php
 
-session_start();
+//print_r($_REQUEST);
 
+if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])){
+	//acessa o sistema
 
-try {
-	$usuario_certo = 'Matheus';
-	$senha_certa = '1234';
+	include_once('./DAO/OngDao.php');
 
+	$email = $_POST['email'];
+	$senha = $_POST['senha'];
 
-	$usuario_digitado = $_POST[''];
-	$senha_digitada = $_POST[''];
+	print_r('EMAIL '. $email);
+	print_r('SENHA '. $senha);
 
-	if($usuario_certo === $usuario_digitado){
-		if($senha_certa === $senha_digitada){
-
-			$_SESSION['usuario_logado'] = $usuario_digitado;
-			header('location: /');
-		}else{
-			header('location: /singup');
-		}
-	}
-} catch (\Throwable $th) {
-	echo 'Error'.$th;
+}else{
+	// redireciona para a tela de login de novamente.
+	header('location: /singup');
 }

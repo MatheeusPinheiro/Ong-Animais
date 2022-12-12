@@ -1,24 +1,26 @@
 <?php
 
 include './Views/partials/Header/header.php';
-
+include './Views/partials/Header/mobile.php';
 ?>
-<!--
-<div class="cad-container mt-2">
-	<div class="h2 text-center mt-3">Boas-vindas ao PetHelp</div>
-</div>
--->
 
 <div class="area-cad">
 	<div class="singIn">
 		<div class="h4 title-cad ">Acesse sua conta</div>
 
-		<form class="" action="" method="POST">
+		<form class="" action="/login/validarLogin" method="POST">
+			<?php
+			if (isset($_GET["erro"])) { ?>
+				<div class="alert alert-danger" role="alert">
+					<?php echo "Acesso Inválido" ?>
+					<!-- RETORNA MENSAGEM DE ERRO SE A SENHA, USUÁRIO OU TIPO DE USUÁRIO ESTIVER INCORRETA-->
+				</div>
+			<?php } ?>
 			<div class=" input-size mb-2">
 				<input type="e-mail" name="email" placeholder="Digite seu e-mail." require />
 			</div>
 			<div class="input-size ">
-				<input type="password" name="email" placeholder="Digite sua senha." require />
+				<input type="password" name="senha" placeholder="Digite sua senha." require />
 			</div>
 			<div class=" input-size mt-2">
 				<input type="submit" value="Entrar" class="btn btn-primary" />

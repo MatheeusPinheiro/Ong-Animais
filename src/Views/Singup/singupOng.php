@@ -1,7 +1,7 @@
 <?php
 
 include './Views/partials/Header/header.php';
-
+include './Views/partials/Header/mobile.php';
 ?>
 
 
@@ -12,6 +12,9 @@ include './Views/partials/Header/header.php';
 		<form method="POST" action="/singup/ong/save" nctype="multipart/form-data">
 			<div class="mb-2 d-flex justify-content-center ">
 				<img src="../../assets/images/patas.png" width="100px" />
+			</div>
+			<div>
+				<input type="hidden" name="usuario" value="1" required />
 			</div>
 			<div>
 				<label>CNPJ *</label>

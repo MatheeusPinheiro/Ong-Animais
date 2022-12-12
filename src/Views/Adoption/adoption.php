@@ -1,16 +1,16 @@
 <?php
-
+session_start() or die;
 include './Views/partials/Header/header.php';
-
+include './Views/partials/Header/mobile.php';
 ?>
 
 
-<div class="container mt-5 bg-primary text-center">
-	<div class="h2 p-2">Pets disponíveis para adoção</div>
+<div class="container mt-5 bg-primary text-center ">
+	<div class="h2 p-2 text-light">Pets disponíveis para adoção</div>
 </div>
 
 
-<div class="container  p-2">
+<div class="container-animais  p-2">
 
 	<div class="animais-grid">
 

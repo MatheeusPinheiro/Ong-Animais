@@ -3,6 +3,7 @@
 session_start();
 
 include './Views/partials/Header/header.php';
+include './Views/partials/Header/mobile.php';
 
 ?>
 

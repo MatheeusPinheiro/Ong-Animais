@@ -1,7 +1,7 @@
 <?php
 
 include './Views/partials/Header/header.php';
-
+include './Views/partials/Header/mobile.php';
 ?>
 
 
@@ -9,13 +9,13 @@ include './Views/partials/Header/header.php';
 <div class="container-fluid bg-light p-5">
 	<div class="form-cad-ong ">
 		<div class="h3">Cadastro de Doadores</div>
-		<form method="POST" action="/singup/ong/save" nctype="multipart/form-data">
+		<form method="POST" action="/singup/doador/save" nctype="multipart/form-data">
 			<div class="mb-2 d-flex justify-content-center ">
 				<img src="../../assets/images/patas.png" width="100px" />
 			</div>
 			<div>
 				<label>CPF *</label>
-				<input class="form-control" type="text" name="cnpj" required />
+				<input class="form-control" type="text" name="cpf" required />
 			</div>
 			<div>
 				<label>Nome *</label>

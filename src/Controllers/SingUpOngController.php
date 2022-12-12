@@ -10,6 +10,10 @@ class SingUpOngController {
 		include 'Views/Singup/singupOng.php';
 
 
+		$modelLogin = new LoginModel();
+		if($_SESSION['email']){
+			$modelLogin = 0;
+		}
 
 	}
 

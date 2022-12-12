@@ -16,17 +16,18 @@ class SingUpDoadorController {
 
 	public static function save(){
 		//Incluindo a Model
-		include 'Models/OngModel.php';
+		include 'Models/DoadorModel.php';
 
 		//Criando objeto da OngModel
-		$model = new OngModel();
+		$model = new DoadorModel();
 
 		//Pegando os dados do formulário.
-		$model->cnpj = $_POST['cnpj'];
+		$model->cpf = $_POST['cpf'];
 		$model->nome = $_POST['nome'];
 		$model->email = $_POST['email'];
 		$model->senha = $_POST['senha'];
 		$model->confirma_senha = $_POST['confirma_senha'];
+		//$model->tipo_usuario = $_POST['usuario'];
 
 		$obj = $model->save();
 

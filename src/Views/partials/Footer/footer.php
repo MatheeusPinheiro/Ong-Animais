@@ -17,6 +17,7 @@
 </footer>
 
 <script src="../../../js/MyJs.js"></script>
+<script src="../../../js/menuMobile.js"></script>
 <script src="../../../js/bootstrap.bundle.min.js"></script>
 </body>
 
