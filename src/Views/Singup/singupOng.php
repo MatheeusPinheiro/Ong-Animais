@@ -14,7 +14,7 @@ include './Views/partials/Header/mobile.php';
 				<img src="../../assets/images/patas.png" width="100px" />
 			</div>
 			<div>
-				<input type="hidden" name="usuario" value="1" required />
+				<input type="hidden" name="tipo_usuario" value="1" required />
 			</div>
 			<div>
 				<label>CNPJ *</label>

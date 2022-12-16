@@ -1,9 +1,9 @@
 <?php
 
-session_start();
 
 include './Views/partials/Header/header.php';
 include './Views/partials/Header/mobile.php';
+include './Components/modal.php';
 ?>
 
 
@@ -16,7 +16,7 @@ include './Views/partials/Header/mobile.php';
 		<div class="contactLeft">
 			<div class="h5 text-white">Não seja timido</div>
 			<p>
-				Fique avontade para entrar em contato comigo.
+				Fique a vontade para entrar em contato comigo.
 				Estou sempre aberto para discutir novos projetos. Ideias Criativas
 				ou oportunidade para doeções para ongs.
 			</p>

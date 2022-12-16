@@ -5,6 +5,7 @@
 
 class DoadorModel {
 
+	public $rows;
 
 	//Método salvar
 	public function save(){
@@ -17,5 +18,15 @@ class DoadorModel {
 		}else{
 			return true;
 		}
+	}
+
+
+	//Pegando as linhas da tabela doador
+	public function getAllRows() {
+		include 'DAO/DoadorDao.php';
+
+		$dao = new DoadorDao();
+
+		$this->rows = $dao->select();
 	}
 }

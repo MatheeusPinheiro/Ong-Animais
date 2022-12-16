@@ -23,7 +23,7 @@ class OngDao
 	public function insert(OngModel $model)
 	{
 
-		$sql = "INSERT INTO ong(cnpj,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,1);";
+		$sql = "INSERT INTO ong(cnpj,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,?);";
 
 		$stmt = $this->conexao->prepare($sql);
 
@@ -32,7 +32,7 @@ class OngDao
 		$stmt->bindValue(3, $model->email);
 		$stmt->bindValue(4, $model->senha);
 		$stmt->bindValue(5, $model->confirma_senha);
-		//$stmt->bindValue(6, $model->tipo_usuario);
+		$stmt->bindValue(6, $model->tipo_usuario);
 
 		try {
 			$stmt->execute();
@@ -42,5 +42,15 @@ class OngDao
 				exit;
 			}
 		}
+	}
+
+
+	public function getAllOngs() {
+
+		$sql = "SELECT * FROM ong ORDER BY nome ASC";
+
+		$stmt = $this->conexao->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}
 }

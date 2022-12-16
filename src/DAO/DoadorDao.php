@@ -23,7 +23,7 @@ class DoadorDao
 	public function insert(DoadorModel $model)
 	{
 
-		$sql = "INSERT INTO doador(cpf,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,2);";
+		$sql = "INSERT INTO doador(cpf,nome,email,senha,confirma_senha,tipo_usuario) VALUES (?,?,?,?,?,?);";
 
 		$stmt = $this->conexao->prepare($sql);
 
@@ -32,7 +32,7 @@ class DoadorDao
 		$stmt->bindValue(3, $model->email);
 		$stmt->bindValue(4, $model->senha);
 		$stmt->bindValue(5, $model->confirma_senha);
-		//$stmt->bindValue(6, $model->tipo_usuario);
+		$stmt->bindValue(6, $model->tipo_usuario);
 
 		try {
 			$stmt->execute();
@@ -43,4 +43,16 @@ class DoadorDao
 			}
 		}
 	}
+
+
+	public function select(){
+		
+		$sql = "SELECT * FROM doador";
+
+		$stmt = $this->conexao->prepare($sql);
+		$stmt->execute();
+
+		return $stmt->fetchAll(PDO::FETCH_CLASS);
+	} 
+	
 }

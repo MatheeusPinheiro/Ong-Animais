@@ -18,4 +18,13 @@ class OngModel {
 			return true;
 		}
 	}
+
+
+	public function getRows(){
+		include 'DAO/OngDao.php';
+		
+
+        $dao = new OngDao();
+        $this->rows = $dao->getAllOngs();
+	}
 }

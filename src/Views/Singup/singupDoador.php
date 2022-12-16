@@ -14,6 +14,10 @@ include './Views/partials/Header/mobile.php';
 				<img src="../../assets/images/patas.png" width="100px" />
 			</div>
 			<div>
+				
+				<input type="hidden" name="tipo_usuario" value="2" />
+			</div>
+			<div>
 				<label>CPF *</label>
 				<input class="form-control" type="text" name="cpf" required />
 			</div>
@@ -45,5 +49,7 @@ include './Views/partials/Header/mobile.php';
 <?php
 
 include 'Views/partials/Footer/footer.php';
-
+if (isset($_GET['message'])){
+    include 'Views/Feedback/feedbackDoador.php';
+}
 ?>

@@ -57,7 +57,7 @@ header {
 /* menu*/
 
 .menu {
-	width: 650px;
+	width: auto;
 	height: auto;
 	display: inline-flex;
 	border-radius: 5px;
@@ -680,18 +680,145 @@ footer {
 
 .title-cad {
 	width: 100%;
-	height: 90px;
+	height: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 20px;
 }
 
 
 
+/*MODAL PARA DOAÇÕES */
+
+.modal-cad-doacao{
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	justify-content: center;
+	align-items: center;
+	transition: all ease .2s;
+}
 
 
+.modal-area-doacao{
+	width: 400px;
+	height: auto;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.area-doacao form{
+	margin-top: 10px;
+	width: 350px;
+	height: auto;
+	padding: 10px 0;
+	background-color: #ff0055a9;
+	border-radius: 10px;
+}
+
+.close-modal-doacao{
+	width: 100%;
+	height: 40px;
+	background-color: #191919;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.close-x{
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 15px;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.select-ong{
+	width: 100%;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.select-ong select{
+	width: calc(100% - 20px);
+	height: 90%;
+}
 
 
+.desc-doacao{
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desc-doacao textarea{
+	resize: none;
+	width: calc(100% - 20px);
+	height: 90%;
+	color: #000;
+	border: 0;
+	outline: 0;
+}
+
+.area-button-doacao{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.area-button-doacao input{
+	margin-right: 10px;
+	width: 100px;
+}
+
+/*Ver doações */
+
+.container-d-recebidas,
+.tabela,
+.filter-date{
+	width: 100%;
+	max-width: 1320px;
+	margin: 10px auto;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	
+}
+
+.container-d-recebidas{
+	
+	background-color: #ff0056;
+}
+
+.container-d-recebidas h2{
+	padding: 5px 0;
+	color: #fff;
+}
 
 
 
@@ -731,30 +858,62 @@ footer {
 		align-items: center;
 		cursor: pointer;
 		z-index: 99;
+		transition: all ease-in 0.5s;
+	}
+
+	.menu-margin{
+		margin-right: 150px;
 	}
 
 	.menu-mobile .row{
-		height: 6px;
+		height: 4px;
 		width: 100%;
-		background-color: #ff0056;
+		background-color: #FFF;
 		z-index: 1000;
-		
+		box-shadow: 0px 0px 3px #ff0056;
 	}
 
 	.menu-mobile-rigth{
-		display: flex;
-		width: 100%;
-		background-color: #ff005549;
 		position: fixed;
+		width: 0px;
+		min-height: 100vh;
+		background: #191919;
 		top: 0;
-		bottom: 0;
-		right:-30rem;
-		bottom: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		transition: all ease-in 0.5s;
 	}
 
-	.add-menu-rigth{
-		position: fixed;
-		right: 30rem;
+	.abriMenu {
+		width: 250px;
+	}
+
+	.menu-mobile-rigth nav ul{
+		display: block;
+	}
+
+	.menu-mobile-rigth nav ul li{
+		list-style: none;
+		margin-bottom: 10px;
+	}
+
+	.menu-mobile-rigth nav ul li a{
+		width: 100%;
+		display: block;
+		font-size: 20px;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		padding: 3px 30px;
+		background-color: #ff0056;
+		border-radius: 6px;
+	}
+
+	.menu-mobile-rigth nav ul li .active{
+		background-color: #0a40be;
 	}
 
 	/* Banner  */
@@ -871,4 +1030,29 @@ footer {
 	.contactRight {
 		width: 100%;
 	}
+}
+
+.radio-area{
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.r-area{
+	margin-right: 10px;
+	display: flex;
+	padding: 5px 0;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.r-area span{
+	margin-left: 10px;
+	font-size: 16px;
+	font-weight: bold;
 }

@@ -1,10 +1,9 @@
 <?php
 
-session_start();
-
 include './Views/partials/Header/header.php';
 include './Views/partials/Header/mobile.php';
 
+include './Components/modal.php';
 ?>
 
 
@@ -21,6 +20,7 @@ include './Views/partials/Header/mobile.php';
 		</div>
 	</div>
 </div>
+
 
 
 <!--HOME INFO-->
@@ -117,10 +117,12 @@ include './Views/partials/Header/mobile.php';
 
 
 
-
 <!-- FOOTER-->
 <?php
 
 include 'Views/partials/Footer/footer.php';
 
+if (isset($_GET['message'])){
+    include 'Views/Feedback/feedbackDoacao.php';
+}
 ?>

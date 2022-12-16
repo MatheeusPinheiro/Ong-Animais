@@ -1,31 +1,46 @@
 
 <?php
+session_start() or die;
 
-class LoginController {
+class LoginController
+{
 
-	public static function index(){
+	public static function index()
+	{
 		include 'Models/LoginModel.php';
 		include 'Views/Singup/singup.php';
 	}
 
 
-	public static function validarLogin(){
+	public static function validarLogin()
+	{
 		include 'Models/LoginModel.php';
 
 		$modelLogin = new LoginModel();
 
-		$validacao = $modelLogin->validarLogin($_POST['email'], $_POST['senha']);
+		if ($_POST['tipo_usuario'] == 2) {
 
-		if($validacao){
-			session_start() or die;
+			$validacao = $modelLogin->validarLoginDoador($_POST['email'], $_POST['senha'], $_POST['tipo_usuario']);
 
-			$_SESSION['email'] = $_POST['email'];
-			$_SESSION['senha'] = $_POST['senha'];
+			if ($validacao) {
+				$_SESSION["email"] = $_POST["email"];
+				$_SESSION["tipo_usuario"] = $_POST["tipo_usuario"];
+				header("location: /");
+			} else {
+				header("location: /singup?erro");
+			}
+		} else if ($_POST['tipo_usuario'] == 1) {
+			$validacao = $modelLogin->validarLoginOng($_POST['email'], $_POST['senha'], $_POST['tipo_usuario']);
 
-			header('location: /');
+			if ($validacao) {
+				$_SESSION["email"] = $_POST["email"];
+				$_SESSION["tipo_usuario"] = $_POST["tipo_usuario"];
+				header("location: /");
+			} else {
+				header("location: /singup?erro");
+			}
 		} else {
-            header("location: /singup?erro");
-        }
+			($_POST['tipo_usuario']) ? 1 : 2;
+		}
 	}
-
 }
