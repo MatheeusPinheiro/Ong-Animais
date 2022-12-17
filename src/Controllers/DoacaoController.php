@@ -17,7 +17,7 @@ class DoacaoController
 		if (isset($_GET['data'])) {
 			$modelDoacoes->getAllRows($_SESSION['email'], $_GET['data']);
 			include 'Views/SeeDoaction/seeDoaction.php';
-		} else if (isset($_GET['email'])) {
+		} else if (isset($_SESSION['email'])) {
 			$modelDoacoes->getAll($_SESSION['email']);
 			include 'Views/SeeDoaction/seeDoaction.php';
 		} else {
@@ -80,7 +80,7 @@ class DoacaoController
 		if ($obj) {
 			// Se for verdadeiro será redirecionado para uma mensagem de sucesso.
 			header('location: /?message=success-create');
-		} elseif ($obj != true) {
+		} else{
 			//Se não for verdadeiro será redirecionado para uma mensagem de erro.
 			header('location: /?message=error-create');
 		}

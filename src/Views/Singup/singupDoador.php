@@ -6,7 +6,7 @@ include './Views/partials/Header/mobile.php';
 
 
 
-<div class="container-fluid bg-light p-5">
+<div class=" container-cad-od ">
 	<div class="form-cad-ong ">
 		<div class="h3">Cadastro de Doadores</div>
 		<form method="POST" action="/singup/doador/save" nctype="multipart/form-data">

@@ -10,15 +10,12 @@ class OngDao
 
 	//construtor da classe
 	public function __construct()
-	{
-		try {
-			$dns = "mysql:host=localhost:3306;dbname=sos";
-			$option = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-			$this->conexao = new PDO($dns, 'root', '1234', $option);
-		} catch (\Throwable $th) {
-			//throw $th;
-		}
-	}
+    {
+        include_once "Conn/Conn.php";
+
+        $conn = new Conn();
+        $this->conexao = $conn->returnConnection();
+    }
 
 	public function insert(OngModel $model)
 	{

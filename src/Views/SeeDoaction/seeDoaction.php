@@ -14,7 +14,7 @@ include './Views/partials/Header/mobile.php';
 <div class="filter-date">
 	<form method="get">
 		<input type="date" name="data"/>
-		<button>Procurar</button>
+		<button class="bg-primary">Procurar</button>
 	</form>
 </div>
 

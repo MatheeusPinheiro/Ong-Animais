@@ -31,6 +31,16 @@ doar.addEventListener('click', (e)=>{
 });
 
 
+let doacao = document.querySelector('.doacao');
+
+doacao.addEventListener('click', ()=> {
+	modal.style.display = 'flex';
+	let menu = document.querySelector('.menu-mobile-rigth');
+	menu.classList.remove('abriMenu');
+
+	menuHamburguer.classList.remove('menu-margin')
+});
+
 
 //fechando o model sem clicar no botão fechar 
 

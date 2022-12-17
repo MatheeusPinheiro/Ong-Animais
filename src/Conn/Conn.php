@@ -6,9 +6,9 @@ class Conn
     public function __construct()
     {
         try {
-			$dns = "mysql:host=localhost:3306;dbname=sos";
-			$option = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
-			$this->conexao = new PDO($dns, 'root', '1234', $option);
+            $dsn = "mysql:host=localhost:3306;dbname=485009";
+            $opcoes = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
+            $this->_con = new PDO($dsn, '485009', '031016ma', $opcoes);
         } catch (PDOException $e) {
             echo $e->getMessage();
         }

@@ -16,7 +16,6 @@ class DoadorController {
 		$model = new DoadorModel();
 		$model->getAllRows();
 
-
 		//importando a view 
 		include 'Views/Singup/singupDoador.php';
 	}
@@ -42,8 +41,8 @@ class DoadorController {
 
 		if($obj){
 			header('location: /singup/doador?message=success-create');
-		}elseif($obj != true){
-			header('/error');
+		}else{
+			header('location: /singup/doador?message=error-create');
 		}
 	}
 }

@@ -30,9 +30,9 @@ class OngController {
 		$obj = $model->save();
 
 		if($obj){
-			header('location: /');
-		}elseif($obj != true){
-			header('/error');
+			header('location: /singup/ong?message=success-create');
+		}else{
+			header('location: /singup/ong?message=error-create');
 		}
 	}
 }

@@ -10,7 +10,7 @@ include './Components/modal.php';
 
 
 <!-- Container de exibição-->
-<div class="container mt-5 bg-primary text-center ">
+<div class="container mt-3 bg-primary text-center ">
 	<div class="h2 p-2 text-light">Pets disponíveis para adoção</div>
 </div>
 

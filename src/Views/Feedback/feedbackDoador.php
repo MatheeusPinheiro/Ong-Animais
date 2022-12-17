@@ -45,55 +45,7 @@ function printMessage($message)
 
                     setTimeout(() => {
                     fecharModal();
-                    window.location.replace('/singup'');
-                    }, 2000)
-                </script>
-                ";
-    if ($message == 'success-delete')
-        return "<div class='modal'>
-                            <div class='modal-area'>
-                                <div class='modal-info'>
-                                    <div class='texto-agente'>
-                                        EXCLUIDO COM SUCESSO
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <script>
-                            let abrirModal = () => document.querySelector('.modal').style.display = 'flex';
-                            let fecharModal = () => document.querySelector('.modal').style.display = 'none';
-                            setTimeout(() => {
-                            abrirModal();
-                            clearTimeout();
-                            }, 0)
-        
-                            setTimeout(() => {
-                            fecharModal();
-                            window.location.replace('/singup'');
-                            }, 2000)
-                        </script>
-                        ";
-    if ($message == 'error-delete')
-        return "<div class='modal'>
-                    <div class='modal-area' style='background-color: #9d3535'>
-                        <div class='modal-info'>
-                            <div class='texto-agente'>
-                                ERRO AO EXCLUIR
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <script>
-                    let abrirModal = () => document.querySelector('.modal').style.display = 'flex';
-                    let fecharModal = () => document.querySelector('.modal').style.display = 'none';
-                    setTimeout(() => {
-                    abrirModal();
-                    clearTimeout();
-                    }, 0)
-
-                    setTimeout(() => {
-                    fecharModal();
-                    window.location.replace('/singup'');
+                    window.location.replace('/singup/doador');
                     }, 2000)
                 </script>
                 ";

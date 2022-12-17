@@ -6,9 +6,9 @@ include './Views/partials/Header/mobile.php';
 
 
 
-<div class="container-fluid bg-light p-5">
+<div class="container-cad-od">
 	<div class="form-cad-ong ">
-		<div class="h3">Cadastro de Ong's</div>
+		<div class="h3 p-2">Cadastro de Ong's</div>
 		<form method="POST" action="/singup/ong/save" nctype="multipart/form-data">
 			<div class="mb-2 d-flex justify-content-center ">
 				<img src="../../assets/images/patas.png" width="100px" />
@@ -45,8 +45,12 @@ include './Views/partials/Header/mobile.php';
 
 
 <!-- FOOTER-->
+
+<!-- FOOTER-->
 <?php
 
 include 'Views/partials/Footer/footer.php';
-
+if (isset($_GET['message'])){
+    include 'Views/Feedback/feedbackOng.php';
+}
 ?>

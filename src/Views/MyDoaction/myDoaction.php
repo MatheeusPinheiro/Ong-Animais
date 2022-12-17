@@ -6,8 +6,8 @@ include './Components/modal.php';
 ?>
 
 
-<div class="container-fluid d-flex justify-content-center p-2 ">
-	<h3 class="p-2">Minhas doações</h3>
+<div class="container-d-recebidas">
+	<h3 class="p-2 text-white">Minhas doações</h3>
 </div>
 
 
@@ -15,7 +15,7 @@ include './Components/modal.php';
 	<?php foreach($modelDoacoes->rows as $item) : ?>	
 	<div class="quadrado">
 		<div class="area-quadrado">
-			<div class="quadrado-title"><div class="h4 p-t2 pb-2">Comprovante</div></div>
+			<div class="quadrado-title"><div class="h4 p-t2 pb-2">Ong</div></div>
 			<div class="ong-select"> <div class="h5 p-t2 pb-2"><?= $item->ong_nome ?> </div> </div>
 			<div class="quadrado-desc">
 				<p>

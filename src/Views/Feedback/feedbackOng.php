@@ -1,7 +1,7 @@
 <?php if (isset($_GET['message'])) echo (printMessage($_GET['message']));
 function printMessage($message)
 {
-    if ($message == 'success-create')
+    if ($message == 'success-create') {
         return "<div class='modal'>
                     <div class='modal-area'>
                         <div class='modal-info'>
@@ -21,11 +21,11 @@ function printMessage($message)
 
                     setTimeout(() => {
                     fecharModal();
-                    window.location.replace('/mydoaction');
+                    window.location.replace('/singup');
                     }, 1000)
                 </script>
                 ";
-    if ($message == 'error-create')
+    } else if ($message == 'error-create') {
         return "<div class='modal'>
                     <div class='modal-area' style='background-color: #9d3535'>
                         <div class='modal-info'>
@@ -36,17 +36,18 @@ function printMessage($message)
                     </div>
                 </div>
                 <script>
-                    let abrirModal = () => document.querySelector('.modal').style.display = 'flex';
-                    let fecharModal = () => document.querySelector('.modal').style.display = 'none';
-                    setTimeout(() => {
-                    abrirModal();
-                    clearTimeout();
-                    }, 0)
+                let abrirModal = () => document.querySelector('.modal').style.display = 'flex';
+                let fecharModal = () => document.querySelector('.modal').style.display = 'none';
+                setTimeout(() => {
+                abrirModal();
+                clearTimeout();
+                }, 0)
 
-                    setTimeout(() => {
-                    fecharModal();
-                    window.location.replace('/');
-                    }, 2000)
-                </script>
+                setTimeout(() => {
+                fecharModal();
+                window.location.replace('/singup/ong');
+                }, 2000)
+            </script>
                 ";
+    }
 }
