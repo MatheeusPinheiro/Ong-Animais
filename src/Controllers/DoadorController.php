@@ -4,8 +4,9 @@
 
 <?php 
 
+//Criando o Controller do Doador
 class DoadorController {
-
+	//Método para exibir a pagina de cadastro do doador.
 	public static function index(){
 		
 		//Incluindo a Model
@@ -21,6 +22,7 @@ class DoadorController {
 	}
 
 
+	//Método para salvar o doador
 	public static function save(){
 		//Incluindo a Model
 		include 'Models/DoadorModel.php';

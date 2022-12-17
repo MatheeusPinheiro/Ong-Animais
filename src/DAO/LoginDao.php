@@ -65,7 +65,6 @@ class LoginDao
 
 		$sql = "SELECT id, nome, email, tipo_usuario from doador WHERE email = ?";
 
-
 		$stmt = $this->conexao->prepare($sql);
 		$stmt->bindValue(1, $login);
 		$stmt->execute();

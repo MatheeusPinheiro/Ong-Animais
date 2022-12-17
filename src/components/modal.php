@@ -9,11 +9,11 @@
 		<div class="area-doacao">
 			<form method="POST" action="/doacao/save">
 				<div>
-					<input type="hidden" name="doador_id" value="<?= $loginModel->id ?>"/>
+					<input type="hidden" name="doador_id" value="<?= $loginModel->id ?>" />
 				</div>
 				<div class="select-ong">
-					<select name="ong_id">
-						<option>Selecione uma Ong</option>
+					<select name="ong_id" required>
+						<option value="">Selecione uma Ong</option>
 						<?php
 						foreach ($modelOng->rows as $item) : ?>
 							<option value="<?= $item->id ?>"> <?= $item->nome ?></option>
@@ -21,9 +21,7 @@
 					</select>
 				</div>
 				<div class="desc-doacao">
-					<textarea name="descricao" placeholder="Escreva">
-					
-					</textarea>
+					<textarea rows="3" cols="50" name="descricao" placeholder="Descreva o que está sendo doado." required></textarea>
 				</div>
 				<div class="area-button-doacao">
 					<input type="submit" class="btn btn-primary" value="doar"  />

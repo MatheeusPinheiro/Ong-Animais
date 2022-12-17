@@ -1,10 +1,13 @@
+<!-- Importações principais-->
 <?php
-
 include './Views/partials/Header/header.php';
 include './Views/partials/Header/mobile.php';
 ?>
 
+<!--Area total do card-->
 <div class="area-cad">
+
+<!-- Area para fazer o login e acessar o sistema. -->
 	<div class="singIn">
 		<div class="h4 title-cad ">Acesse sua conta</div>
 
@@ -16,6 +19,7 @@ include './Views/partials/Header/mobile.php';
 					<!-- RETORNA MENSAGEM DE ERRO SE A SENHA, USUÁRIO OU TIPO DE USUÁRIO ESTIVER INCORRETA-->
 				</div>
 			<?php } ?>
+
 			<div class=" input-size mb-2">
 				<input type="e-mail" name="email" placeholder="Digite seu e-mail." required />
 			</div>
@@ -35,10 +39,12 @@ include './Views/partials/Header/mobile.php';
 			<div class=" input-size mt-2">
 				<input type="submit" value="Entrar" class="btn btn-primary" />
 			</div>
+
 		</form>
 
-	</div>
+	</div> <!-- Final da area para efetuar Login -->
 
+	<!-- Area para selecionar a criação do tipo de conta. -->
 	<div class="singUp">
 		<div class="h4 title-cad text-center">Crie sua conta</div>
 		<div class="cad-option">
@@ -50,6 +56,7 @@ include './Views/partials/Header/mobile.php';
 			</div>
 		</div>
 	</div>
+
 </div>
 
 

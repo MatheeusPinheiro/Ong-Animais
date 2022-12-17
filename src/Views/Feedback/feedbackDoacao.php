@@ -21,7 +21,7 @@ function printMessage($message)
 
                     setTimeout(() => {
                     fecharModal();
-                    window.location.replace('/');
+                    window.location.replace('/mydoaction');
                     }, 1000)
                 </script>
                 ";

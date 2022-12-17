@@ -10,9 +10,17 @@ include './Components/modal.php';
 
 
 
+<!-- Container Contato-->
 <div class="container-contact">
+	
+	<!-- Cabeçalho do Contato-->
 	<div class="h1 text-white text-center pt2 pb-2">Entre em contato</div>
+	
+	
+	<!-- Div principal do Contato -->
 	<div class="contact-area">
+		
+	<!-- Div da Esquerda-->
 		<div class="contactLeft">
 			<div class="h5 text-white">Não seja timido</div>
 			<p>
@@ -31,6 +39,7 @@ include './Components/modal.php';
 			</div>
 		</div>
 
+	<!-- Div da Direita-->
 		<div class="contactRight">
 			<div class="form-contact">
 				<div class="input-box">
@@ -51,9 +60,9 @@ include './Components/modal.php';
 			</div>
 		</div>
 
+	</div> 
 
-	</div>
-</div>
+</div> <!-- Final da Div Contato -->
 
 
 

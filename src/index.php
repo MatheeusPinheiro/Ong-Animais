@@ -1,6 +1,6 @@
 
 
-
+<!-- Importações do Controller -->
 <?php
 include 'Controllers/HomeController.php';
 include 'Controllers/AdoptionController.php';
@@ -11,9 +11,11 @@ include 'Controllers/LoginController.php';
 include 'Controllers/ContactController.php';
 include 'Controllers/DoacaoController.php';
 
+// Pegando a url digita.
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 
+// Usando o switch para redirecionar para as páginas correta.
 switch($url){
 
 	case '/':
@@ -60,5 +62,8 @@ switch($url){
 		DoacaoController::save();
 	break;
 
-	
+	case '/mydoaction':
+		DoacaoController::MyDoaction();
+	break;
+
 }

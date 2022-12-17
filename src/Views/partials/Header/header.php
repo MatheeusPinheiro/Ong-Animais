@@ -1,8 +1,9 @@
 
-
+<!-- HTML5 -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- Cabeçalho principal com as importações do CSS -->
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
 
 <body>
 	<?php
+	//Se não existe sessão será exibido esse menu.
 	if (!isset($_SESSION['email'])) {
 	?>
 
@@ -42,6 +44,8 @@
 			</div>
 		</header>
 	<?php
+	  //Se a sessão existe e o usuário logado for do tipo_usuario 1, que é a ong.
+	  //Será exibido esse menu.		
 	} else if(isset($_SESSION['email']) && $_SESSION['tipo_usuario'] == 1) { ?>
 		<header>
 			<div class="container-header">
@@ -69,6 +73,8 @@
 			</div>
 		</header>
 	<?php
+	  //Se a sessão existe e o usuário logado for do tipo_usuario 2, que é o doador.
+	  //Será exibido esse menu.	
 	}else if(isset($_SESSION['email']) && $_SESSION['tipo_usuario'] == 2){ ?>
 			<header>
 			<div class="container-header">
@@ -85,11 +91,11 @@
 								<a href="#" class=" menu-option doador">Doar</a>
 							</li>
 							<li>
-								<a href="#" class=" menu-option doador">Minhas Doações</a>
+								<a href="/mydoaction" class=" menu-option doador">Minhas Doações</a>
 							</li>
 
 							<li>
-								<a href="/contact" class=" menu-option">teste</a>
+								<a href="/contact" class=" menu-option">Contato</a>
 							</li>
 							
 							<li>
@@ -101,6 +107,7 @@
 			</div>
 		</header>
 		<?php
+	//Caso nenhuma das opções seja satisfeita, sera exibido na tela a string "Erro".	
 	}else {echo "Erro!!"; }
 	
 	?>

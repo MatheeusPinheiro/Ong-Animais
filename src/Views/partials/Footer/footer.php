@@ -1,5 +1,7 @@
 
 
+<!-- Container do Footer-->
+
 <footer class="container-fluid">
 	<hr />
 	<div class="footer">
@@ -16,9 +18,12 @@
 	</div>
 </footer>
 
+
+<!-- Importações do Javascript -->
 <script src="../../../js/MyJs.js"></script>
 <script src="../../../js/menuMobile.js"></script>
 <script src="../../../js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

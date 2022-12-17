@@ -3,15 +3,15 @@
 
 
 <?php 
-
+// Criando o controller da Ong
 class OngController {
-
+	//Criando o método para exibir a view da Ong
 	public static function index(){
 		
 		include 'Views/Singup/singupOng.php';
 	}
 
-
+	//Criando o método para salvar a Ong
 	public static function save(){
 		//Incluindo a Model
 		include 'Models/OngModel.php';

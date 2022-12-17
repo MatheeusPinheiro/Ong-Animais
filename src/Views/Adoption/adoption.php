@@ -1,28 +1,30 @@
+
+
+<!-- Importações principais-->
 <?php
 include './Views/partials/Header/header.php';
 include './Views/partials/Header/mobile.php';
-
 include './Components/modal.php';
 ?>
 
 
+
+<!-- Container de exibição-->
 <div class="container mt-5 bg-primary text-center ">
 	<div class="h2 p-2 text-light">Pets disponíveis para adoção</div>
 </div>
 
 
+
+<!-- Animais vindos do array do Javascript-->
 <div class="container-animais  p-2">
-
-	<div class="animais-grid">
-
-	</div>
+	<div class="animais-grid"></div>
 </div>
 
 
 
 
-<!-- Clona animais-card -->
-
+<!-- Card para ser clonado no Javascript e adicionado na animais-grid. -->
 <div class="clone">
 	<div class="animais-card p-2">
 		<div class="animal-img">
@@ -44,7 +46,5 @@ include './Components/modal.php';
 
 <!-- FOOTER-->
 <?php
-
 include './Views/partials/Footer/footer.php';
-
 ?>
