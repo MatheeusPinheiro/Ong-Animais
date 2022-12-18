@@ -26,7 +26,7 @@ include './Components/modal.php';
 			<p>
 				Fique a vontade para entrar em contato comigo.
 				Estou sempre aberto para discutir novos projetos. Ideias Criativas
-				ou oportunidade para doeções para ongs.
+				ou oportunidade para doações para ongs.
 			</p>
 
 			<div class="msg-icon">

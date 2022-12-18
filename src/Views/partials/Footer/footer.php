@@ -14,7 +14,7 @@
 		</div>
 	</div>
 	<div class="ong-parc">
-		<div class="h6 p-2 text-white text-center">ONGS Parceiras</div>
+		<div class="h6 p-2 text-white text-center">ONGs Parceiras</div>
 		<div class="grid-footer">
 
 			<!-- Local onde está sendo adicionado a div clone-footer. -->

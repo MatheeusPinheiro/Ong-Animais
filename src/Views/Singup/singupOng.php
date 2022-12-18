@@ -33,7 +33,7 @@ include './Views/partials/Header/mobile.php';
 				<input type="Password" class="form-control" name="senha" required />
 			</div>
 			<div>
-				<label>Repeti Senha *</label>
+				<label>Confirmar Senha *</label>
 				<input type="Password" class="form-control" name="confirma_senha" required />
 			</div>
 			<div class="mt-2 d-flex justify-content-end">

@@ -345,7 +345,7 @@ header {
 
 /* CAD ONG*/
 
-.container-cad-od{
+.container-cad-od {
 	width: 100%;
 	max-width: 1320px;
 	margin: auto;
@@ -529,7 +529,7 @@ header {
 }
 
 
-.menu-mobile-rigth{
+.menu-mobile-rigth {
 	display: none;
 }
 
@@ -550,7 +550,7 @@ footer {
 	background-color: #191919;
 	margin-top: 20px;
 	display: flex;
-	height:auto ;
+	height: auto;
 	padding: 40px 0;
 }
 
@@ -571,7 +571,7 @@ footer {
 }
 
 
-.ong-parc{
+.ong-parc {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -581,13 +581,13 @@ footer {
 
 /*CARD FOOTER */
 
-.card-footer{
+.card-footer {
 	width: 100px;
 	height: 100px;
 	margin: 20px;
 }
 
-.card-f-img{
+.card-f-img {
 	width: 100%;
 	height: 100%;
 	background-color: #FFF;
@@ -597,23 +597,24 @@ footer {
 	border-radius: 3px;
 }
 
-.card-f-img img{
+.card-f-img img {
 	width: 95%;
 	height: 95%;
 }
 
 
 
-.grid-footer{
+.grid-footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	justify-items: center;
 }
 
 
 
-.clone-footer{
+.clone-footer {
 	display: none;
 }
 
@@ -758,7 +759,7 @@ footer {
 
 /*MODAL PARA DOAÇÕES */
 
-.modal-cad-doacao{
+.modal-cad-doacao {
 	width: 100%;
 	height: 100%;
 	display: none;
@@ -774,7 +775,7 @@ footer {
 }
 
 
-.modal-area-doacao{
+.modal-area-doacao {
 	width: 400px;
 	height: auto;
 	background-color: #fff;
@@ -785,7 +786,7 @@ footer {
 	padding-bottom: 20px;
 }
 
-.area-doacao form{
+.area-doacao form {
 	margin-top: 10px;
 	width: 350px;
 	height: auto;
@@ -794,7 +795,7 @@ footer {
 	border-radius: 10px;
 }
 
-.close-modal-doacao{
+.close-modal-doacao {
 	width: 100%;
 	height: 40px;
 	background-color: #191919;
@@ -803,7 +804,7 @@ footer {
 	align-items: center;
 }
 
-.close-x{
+.close-x {
 	width: 30px;
 	height: 30px;
 	color: #fff;
@@ -816,7 +817,7 @@ footer {
 	cursor: pointer;
 }
 
-.select-ong{
+.select-ong {
 	width: 100%;
 	height: 35px;
 	display: flex;
@@ -825,13 +826,13 @@ footer {
 	margin-bottom: 10px;
 }
 
-.select-ong select{
+.select-ong select {
 	width: calc(100% - 20px);
 	height: 90%;
 }
 
 
-.desc-doacao{
+.desc-doacao {
 	width: 100%;
 	height: auto;
 	padding: 10px 0;
@@ -840,7 +841,7 @@ footer {
 	align-items: center;
 }
 
-.desc-doacao textarea{
+.desc-doacao textarea {
 	resize: none;
 	width: calc(100% - 20px);
 	height: 90%;
@@ -850,18 +851,18 @@ footer {
 	padding: 10px 5px;
 }
 
-.desc-doacao textarea[placeholder]{
+.desc-doacao textarea[placeholder] {
 	color: #191919;
 }
 
-.area-button-doacao{
+.area-button-doacao {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.area-button-doacao input{
+.area-button-doacao input {
 	margin-right: 10px;
 	width: 100px;
 }
@@ -870,7 +871,7 @@ footer {
 
 .container-d-recebidas,
 .tabela,
-.filter-date{
+.filter-date {
 	width: 100%;
 	max-width: 1320px;
 	margin: 10px auto;
@@ -879,15 +880,15 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border-radius: 7px;
-	
+
 }
 
-.container-d-recebidas{
-	
+.container-d-recebidas {
+
 	background-color: #ff0056;
 }
 
-.container-d-recebidas h2{
+.container-d-recebidas h2 {
 	padding: 5px 0;
 	color: #fff;
 }
@@ -899,7 +900,7 @@ footer {
 
 /* QUADRADO DE DOAÇÃO */
 
-.quadrado{
+.quadrado {
 	width: 320px;
 	height: auto;
 	padding: 10px 0;
@@ -911,7 +912,7 @@ footer {
 	background-color: #ff0056;
 }
 
-.area-quadrado{
+.area-quadrado {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -920,7 +921,7 @@ footer {
 }
 
 
-.quadrado-title{
+.quadrado-title {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -930,7 +931,7 @@ footer {
 
 
 
-.ong-select{
+.ong-select {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -941,7 +942,7 @@ footer {
 
 
 
-.quadrado-desc{
+.quadrado-desc {
 	width: 100%;
 	display: flex;
 	justify-self: center;
@@ -953,7 +954,7 @@ footer {
 }
 
 
-.quadrado-desc p{
+.quadrado-desc p {
 	text-align: center;
 	margin-bottom: 0;
 	font-family: Arial, Helvetica, sans-serif;
@@ -961,7 +962,7 @@ footer {
 
 
 
-.acaoes-button{
+.acaoes-button {
 	width: 100%;
 	height: auto;
 	padding: 10px 0;
@@ -973,7 +974,7 @@ footer {
 
 /*Comprovante grid */
 
-.comprovante-grid{
+.comprovante-grid {
 	width: 100%;
 	max-width: 1320px;
 	height: auto;
@@ -986,39 +987,39 @@ footer {
 /* Imprimir */
 
 @media print {
-    @page {
-        margin: 0;
-    }
+	@page {
+		margin: 0;
+	}
 
-    body {
-        margin: 0.5cm;
+	body {
+		margin: 0.5cm;
 		visibility: hidden;
-    }
-	
+	}
+
 	.container-header,
 	.acaoes-button,
-	.footer{
+	.footer {
 		display: none;
 	}
 
-	.quadrado{
+	.quadrado {
 		width: calc(100% - 20px);
 		margin: auto;
 		color: #000;
 		visibility: visible;
 	}
+
 	.quadrado-title,
 	.quadrado-desc,
-	.ong-select
-	{
+	.ong-select {
 		color: #000;
 		border: none;
 	}
 
-	footer{
+	footer {
 		border: 0;
 	}
-	
+
 }
 
 
@@ -1066,11 +1067,11 @@ footer {
 		transition: all ease-in 0.5s;
 	}
 
-	.menu-margin{
+	.menu-margin {
 		margin-right: 150px;
 	}
 
-	.menu-mobile .row{
+	.menu-mobile .row {
 		height: 4px;
 		width: 100%;
 		background-color: #FFF;
@@ -1078,7 +1079,7 @@ footer {
 		box-shadow: 0px 0px 3px #ff0056;
 	}
 
-	.menu-mobile-rigth{
+	.menu-mobile-rigth {
 		position: fixed;
 		width: 0px;
 		min-height: 100vh;
@@ -1096,16 +1097,16 @@ footer {
 		width: 250px;
 	}
 
-	.menu-mobile-rigth nav ul{
+	.menu-mobile-rigth nav ul {
 		display: block;
 	}
 
-	.menu-mobile-rigth nav ul li{
+	.menu-mobile-rigth nav ul li {
 		list-style: none;
 		margin-bottom: 10px;
 	}
 
-	.menu-mobile-rigth nav ul li a{
+	.menu-mobile-rigth nav ul li a {
 		width: 100%;
 		display: block;
 		font-size: 20px;
@@ -1117,7 +1118,7 @@ footer {
 		border-radius: 6px;
 	}
 
-	.menu-mobile-rigth nav ul li .active{
+	.menu-mobile-rigth nav ul li .active {
 		background-color: #0a40be;
 	}
 
@@ -1188,9 +1189,9 @@ footer {
 		margin-bottom: 20px;
 	}
 
-	.video-home video{
+	.video-home video {
 		width: calc(100% - 10px);
-	} 
+	}
 
 
 	/* Animais */
@@ -1237,18 +1238,18 @@ footer {
 	}
 
 	/*Forms cad ong e doador */
-	.container-cad-od{
+	.container-cad-od {
 		width: calc(100% - 10px);
 	}
 
-	.form-cad-ong form{
+	.form-cad-ong form {
 		width: calc(100% - 5px);
 	}
 
 
 	/*Comprovantes */
 
-	.comprovante-grid{
+	.comprovante-grid {
 		width: calc(100% - 10px);
 		display: flex;
 		flex-direction: column;
@@ -1257,7 +1258,7 @@ footer {
 	}
 
 	/*Modal para cadastro de doação */
-	.modal-area-doacao{
+	.modal-area-doacao {
 		width: calc(100% - 20px);
 	}
 
@@ -1268,23 +1269,23 @@ footer {
 		background-color: #191919;
 	}
 
-	.filter-date form{
-			width: 100%;
-			height: inherit;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			padding: 0 10px;
+	.filter-date form {
+		width: 100%;
+		height: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0 10px;
 	}
 
-	.filter-date form input{
+	.filter-date form input {
 		flex: 1;
 		margin-right: 20px;
 		height: 35px;
 		padding: 0 10px;
 	}
 
-	.filter-date form button{
+	.filter-date form button {
 		height: 35px;
 		width: 80px;
 		color: #fff;
@@ -1293,44 +1294,45 @@ footer {
 		border-radius: 4px;
 	}
 
-	.tabela{
+	.tabela {
 		width: calc(100% - 10px);
 	}
 
-	.container-d-recebidas{
+	.container-d-recebidas {
 		padding: 0;
 		width: calc(100% - 10px);
 	}
 
 	/*footer */
 
-	footer{
+	footer {
 		flex-direction: column;
 	}
-	
-	.footer{
+
+	.footer {
 		padding: 0;
 		align-items: center;
 	}
-	.desc-footer{
-		
+
+	.desc-footer {
+
 		width: calc(100% - 5px);
 	}
-	.desc-footer span{
+
+	.desc-footer span {
 		text-align: center;
-		margin: auto;
 	}
 
-	.ong-parc{
+	.ong-parc {
 		border-left: none;
 		border-top: 1px solid #777;
 		margin-top: 10px;
 	}
 
-	.grid-footer{
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin: auto;
+	.grid-footer {
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
 	}
 }
 
@@ -1350,7 +1352,7 @@ footer {
 
 
 /*Configurações extras */
-.radio-area{
+.radio-area {
 	width: 100%;
 	height: 45px;
 	display: flex;
@@ -1359,7 +1361,7 @@ footer {
 	margin-top: 10px;
 }
 
-.r-area{
+.r-area {
 	margin-right: 10px;
 	display: flex;
 	padding: 5px 0;
@@ -1369,9 +1371,8 @@ footer {
 	align-items: center;
 }
 
-.r-area span{
+.r-area span {
 	margin-left: 10px;
 	font-size: 16px;
 	font-weight: bold;
 }
-

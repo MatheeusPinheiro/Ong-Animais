@@ -29,7 +29,7 @@ include './Views/partials/Header/mobile.php';
 			<div class="radio-area  ">
 				<div class="r-area">
 					<input type="radio" name="tipo_usuario" value="1" required />
-					<span>Ong</span>
+					<span>ONG</span>
 				</div>
 				<div class="r-area  ">
 					<input type="radio" name="tipo_usuario" value="2" required />
