@@ -38,7 +38,7 @@ class DoacaoModel
 		}
 	}
 
-	//Pegando 
+	//Selecioandno doacao	
 	public function getAll(string $ong_id)
 	{
 		include 'DAO/DoacaoDao.php';
@@ -53,6 +53,7 @@ class DoacaoModel
 		}
 	}
 
+	//Pegando todas as doações.
 	public function getAllDoacoes(string $doador_email)
 	{
 		include 'DAO/DoacaoDao.php';

@@ -54,7 +54,7 @@ class LoginDao
 		return $stmt->fetchObject("LoginModel");
 	}
 
-
+	//Selecionando pelo Login
 	public function selectByLogin(string $login)
 	{
 		include_once 'Models/LoginModel.php';

@@ -19,7 +19,7 @@ class OngModel {
 		}
 	}
 
-
+	//Linhas do banco de dados.
 	public function getRows(){
 		include 'DAO/OngDao.php';
 		

@@ -17,6 +17,7 @@ class OngDao
         $this->conexao = $conn->returnConnection();
     }
 
+	//adicionando ongs no banco de dados
 	public function insert(OngModel $model)
 	{
 
@@ -42,6 +43,7 @@ class OngDao
 	}
 
 
+	//Pegando todas as Ongs do banco de dados
 	public function getAllOngs() {
 
 		$sql = "SELECT * FROM ong ORDER BY nome ASC";
